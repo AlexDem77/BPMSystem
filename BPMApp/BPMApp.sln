@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31005.135
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BPMApp", "BPMApp\BPMApp.csproj", "{643FAD13-8486-4561-A387-A9153BC0498C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BPMApp.Db", "BPM.Db\BPMApp.Db.csproj", "{4FA71A1A-BBE2-4D7E-A1B6-1390B0B31084}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{643FAD13-8486-4561-A387-A9153BC0498C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{643FAD13-8486-4561-A387-A9153BC0498C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{643FAD13-8486-4561-A387-A9153BC0498C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{643FAD13-8486-4561-A387-A9153BC0498C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4FA71A1A-BBE2-4D7E-A1B6-1390B0B31084}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4FA71A1A-BBE2-4D7E-A1B6-1390B0B31084}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4FA71A1A-BBE2-4D7E-A1B6-1390B0B31084}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4FA71A1A-BBE2-4D7E-A1B6-1390B0B31084}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F9D588FD-D7E3-4ECC-9DB1-4B5FCE5EA210}
+	EndGlobalSection
+EndGlobal
