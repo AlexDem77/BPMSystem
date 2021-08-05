@@ -1,9 +1,10 @@
-﻿using System;
+﻿using BpmApp.Db;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Text;
 
-namespace BPMApp.Db
+namespace BpmApp.Db
 {
     /// <summary>
     /// Работник компании
@@ -34,7 +35,7 @@ namespace BPMApp.Db
         /// <summary>
         /// Должность
         /// </summary>
-        public string Position { get; set; }
+        public Position Position { get; set; }
 
         /// <summary>
         /// Опыт работы

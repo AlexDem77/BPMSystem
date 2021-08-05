@@ -3,9 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31005.135
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BPMApp", "BPMApp\BPMApp.csproj", "{643FAD13-8486-4561-A387-A9153BC0498C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BpmApp", "BPMApp\BpmApp.csproj", "{643FAD13-8486-4561-A387-A9153BC0498C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BPMApp.Db", "BPM.Db\BPMApp.Db.csproj", "{4FA71A1A-BBE2-4D7E-A1B6-1390B0B31084}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BpmApp.Db", "BPM.Db\BpmApp.Db.csproj", "{4FA71A1A-BBE2-4D7E-A1B6-1390B0B31084}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Text;
 
-namespace BPMApp.Db
+namespace BpmApp.Db
 {
     /// <summary>
     /// Отдел комании
