@@ -16,17 +16,26 @@ namespace BpmApp.Db
         /// <summary>
         /// Описание таблицы сотрудников. Для разработки
         /// </summary>
-        public DbSet<Employee>  Employees { get; set; }
+        public DbSet<Employee> Employees { get; set; }
+
+        /// <summary>
+        /// Описание таблицы отделов. Для разработки
+        /// </summary>
+        public DbSet<Department> Departments { get; set; }
+
+        //public BpmContext()
+        //    : base("DbConnection")
+        //{ }
 
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
-        {
-            if (!optionsBuilder.IsConfigured)
             {
-                string conectionString = "Data Source=(localdb)/MSSQLLocalDB;Initial Catalog=bpm_db;Integrated Security=True";
-                optionsBuilder.UseSqlServer(conectionString);
+                if (!optionsBuilder.IsConfigured)
+                {
+                    string conectionString = "Data Source=(localdb)/MSSQLLocalDB;Initial Catalog=bpm_db;Integrated Security=True";
+                    optionsBuilder.UseSqlServer(conectionString);
+                }
+                base.OnConfiguring(optionsBuilder);
             }
-            base.OnConfiguring(optionsBuilder);
         }
-    }
 }

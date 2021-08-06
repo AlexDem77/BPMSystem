@@ -7,6 +7,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BpmApp", "BPMApp\BpmApp.csp
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BpmApp.Db", "BPM.Db\BpmApp.Db.csproj", "{4FA71A1A-BBE2-4D7E-A1B6-1390B0B31084}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DbTest", "DbTest\DbTest.csproj", "{ABD44E0E-CF3C-4F66-9DDB-8B0DC76A47A0}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{4FA71A1A-BBE2-4D7E-A1B6-1390B0B31084}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4FA71A1A-BBE2-4D7E-A1B6-1390B0B31084}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4FA71A1A-BBE2-4D7E-A1B6-1390B0B31084}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ABD44E0E-CF3C-4F66-9DDB-8B0DC76A47A0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ABD44E0E-CF3C-4F66-9DDB-8B0DC76A47A0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ABD44E0E-CF3C-4F66-9DDB-8B0DC76A47A0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ABD44E0E-CF3C-4F66-9DDB-8B0DC76A47A0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

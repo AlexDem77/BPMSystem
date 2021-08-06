@@ -40,7 +40,7 @@ namespace BpmApp.Db
         /// <summary>
         /// Опыт работы
         /// </summary>
-        public string WorkExperience { get; set; }
+        public double WorkExperience { get; set; }
 
         /// <summary>
         /// Табельный номер
