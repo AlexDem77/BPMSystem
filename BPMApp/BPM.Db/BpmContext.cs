@@ -32,7 +32,7 @@ namespace BpmApp.Db
             {
                 if (!optionsBuilder.IsConfigured)
                 {
-                    string conectionString = "Data Source=(localdb)/MSSQLLocalDB;Initial Catalog=bpm_db;Integrated Security=True";
+                    string conectionString = "Data Source=(localdb)//MSSQLLocalDB;Initial Catalog=bpm_db;Integrated Security=True";
                     optionsBuilder.UseSqlServer(conectionString);
                 }
                 base.OnConfiguring(optionsBuilder);
