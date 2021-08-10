@@ -1,4 +1,5 @@
 ﻿using BpmApp.Db;
+using Microsoft.EntityFrameworkCore;
 using System;
 
 namespace DbTest
@@ -16,22 +17,27 @@ namespace DbTest
             {
                 using (var context = new BpmContext())
                 {
+                    //context.Database.Migrate();
+
                     context.Employees.Add(new Employee()
                     {
                         FirstName = "Иван",
                         LastName = "Иванов",
                         PersonNumber = 35,
-                        Position = new Position() { Name = "developer" },
+                        Position = new Position() { Name = "developer", Title = "title" },
                         WorkExperience = 2.3,
                         DateOfBirth = new DateTime(1992, 7, 20)
                     });
                     context.SaveChanges();
                 }
             }
-            catch
+            catch (Exception ex)
             {
-                int i = 0;
-                i++;
+                while (ex != null)
+                {
+                    Console.WriteLine($"{ex.GetType().Name}, message: {ex.Message}");
+                    ex = ex.InnerException;
+                }
             }
 
         }

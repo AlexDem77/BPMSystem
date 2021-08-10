@@ -7,6 +7,7 @@ namespace BpmApp.Db
 {
 
     // Data Source=(localdb)\MSSQLLocalDB;Initial Catalog=bpm_db;Integrated Security=True
+    // Data Source=DESKTOP-RQPV4MR;Initial Catalog=bpm_db;Integrated Security=True
 
     /// <summary>
     /// Описание базы данных. Для разработки
@@ -32,8 +33,8 @@ namespace BpmApp.Db
             {
                 if (!optionsBuilder.IsConfigured)
                 {
-                    string conectionString = "Data Source=(localdb)//MSSQLLocalDB;Initial Catalog=bpm_db;Integrated Security=True";
-                    optionsBuilder.UseSqlServer(conectionString);
+                    string connectionString = "Data Source=DESKTOP-RQPV4MR;Initial Catalog=bpm_db;Integrated Security=True";
+                    optionsBuilder.UseSqlServer(connectionString);
                 }
                 base.OnConfiguring(optionsBuilder);
             }

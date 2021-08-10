@@ -10,8 +10,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace BpmApp.Db.Migrations
 {
     [DbContext(typeof(BpmContext))]
-    [Migration("20210807053900_newM")]
-    partial class newM
+    [Migration("20210810201513_newMigration")]
+    partial class newMigration
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
