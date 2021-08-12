@@ -4,4 +4,9 @@
     <TargetFramework>net5.0</TargetFramework>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\BPM.Db\BpmApp.Db.csproj" />
+    <ProjectReference Include="..\BpmApp.Models\BpmApp.Models.csproj" />
+  </ItemGroup>
+
 </Project>
