@@ -1,6 +1,8 @@
 ﻿using BpmApp.Db;
 using Microsoft.EntityFrameworkCore;
 using System;
+using BpmApp.Db.Entities;
+using BpmApp.Db.Infrastructure;
 
 namespace DbTest
 {
@@ -8,10 +10,8 @@ namespace DbTest
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Для продолжения игры нажмите любую клавишу...");
+            Console.WriteLine("Для продолжения нажмите любую клавишу...");
             //Console.ReadKey();
-
-
 
             try
             {
@@ -19,12 +19,14 @@ namespace DbTest
                 {
                     //context.Database.Migrate();
 
+                    var developerPositionId = context.CreateOrFindPosition(context, "Developer", "DevTitle");
+
                     context.Employees.Add(new Employee()
                     {
                         FirstName = "Иван",
                         LastName = "Иванов",
                         PersonNumber = 35,
-                        Position = new Position() { Name = "developer", Title = "title" },
+                        PositionId = developerPositionId,
                         WorkExperience = 2.3,
                         DateOfBirth = new DateTime(1992, 7, 20)
                     });
@@ -39,7 +41,6 @@ namespace DbTest
                     ex = ex.InnerException;
                 }
             }
-
         }
     }
 }

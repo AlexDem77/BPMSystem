@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Text;
 
-namespace BpmApp.Db
+namespace BpmApp.Db.Entities
 {
     public class Position
     {
