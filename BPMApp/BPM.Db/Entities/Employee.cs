@@ -10,14 +10,8 @@ namespace BpmApp.Db.Entities
     /// <summary>
     /// Работник компании
     /// </summary>
-    public class Employee
+    public class Employee : BaseEntity
     {
-        /// <summary>
-        /// Идентификатор работника
-        /// </summary>
-        [Key]
-        public Guid Id { get; set; }
-
         /// <summary>
         /// Имя работника
         /// </summary>

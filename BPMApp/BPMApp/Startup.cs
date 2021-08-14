@@ -1,6 +1,9 @@
+using BpmApp.Db.Infrastructure;
+using BpmApp.Infrastructure.Repositories;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
@@ -24,6 +27,16 @@ namespace BPMApp
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllersWithViews();
+
+            services.AddDbContext<BpmContext>(options =>
+            {
+                var connectionString = Configuration.GetConnectionString("ConnectionString");
+                options.UseSqlServer(connectionString);
+            });
+
+            services.AddTransient<IPositionRepository, PositionRepository>();
+            services.AddTransient<IDepartmentRepository, DepartmentRepository>();
+            services.AddTransient<IEmployeeRepository, EmployeeRepository>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

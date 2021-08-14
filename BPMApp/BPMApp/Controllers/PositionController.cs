@@ -11,6 +11,18 @@ namespace BpmApp.Controllers
     [Route("api/[controller]")]
     public class PositionController : ControllerBase
     {
+        private readonly IPositionRepository _positionRepository;
 
+        public PositionController(IPositionRepository positionRepository) // ← инъекция
+        {
+            _positionRepository = positionRepository;
+        }
+
+        [HttpGet]
+        public async Task<IActionResult> Get()
+        {
+            var result = _positionRepository.GetAll().ToList();
+            return Ok(result);
+        }
     }
 }

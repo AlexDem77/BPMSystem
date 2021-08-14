@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace BpmApp.Infrastructure.Repositories
 {
-    interface IPositionRepository
+    public interface IPositionRepository
     {
         /// <summary>
         /// Получение всех должностей

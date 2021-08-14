@@ -5,14 +5,8 @@ using System.Text;
 
 namespace BpmApp.Db.Entities
 {
-    public class Position
+    public class Position : BaseEntity
     {
-        /// <summary>
-        /// 
-        /// </summary>
-        [Key]
-        public Guid Id { get; set; }
-
         /// <summary>
         /// Наименование должности
         /// </summary>

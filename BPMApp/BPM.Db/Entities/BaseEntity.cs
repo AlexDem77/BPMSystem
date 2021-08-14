@@ -11,7 +11,7 @@ namespace BpmApp.Db.Entities
     public abstract class BaseEntity
     {
         [Key] // это ключ
-        [DatabaseGenerated(DatabaseGeneratedOption.Identity)] // показывем что генерится базой
+        [DatabaseGenerated(DatabaseGeneratedOption.Identity)] // генерится базой
         public Guid Id { get; set; }
     }
 }

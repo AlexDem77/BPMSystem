@@ -8,14 +8,8 @@ namespace BpmApp.Db.Entities
     /// <summary>
     /// Отдел комании
     /// </summary>
-    public class Department
+    public class Department : BaseEntity
     {
-        /// <summary>
-        /// Идентификатор отдела
-        /// </summary>
-        [Key]
-        public Guid Id { get; set; }
-
         /// <summary>
         /// Наименование отдела
         /// </summary>
